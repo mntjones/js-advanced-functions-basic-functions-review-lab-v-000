@@ -33,6 +33,7 @@ const Calculator = {
 
 function actionApplyer(int, array) {
   
+  
   if (array.length === 0){
     return int;
   }
@@ -47,10 +48,12 @@ function actionApplyer(int, array) {
   
 }
 
-let a = s;
+function actionApplyer(s, arr) {
+	let a = s;
 	
 	arr.forEach(i => {
 		return a = i(a);
 	});
 
 	return a;
+}
