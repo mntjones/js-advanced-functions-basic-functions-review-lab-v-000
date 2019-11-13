@@ -35,15 +35,12 @@ function actionApplyer(int, array) {
   
   let sum = int;
   
-  if (array.length === 0){
-    return int;
-  }
-  else {
-    
-    array.forEach(function(meth) {
-      return sum = meth(sum)
-    })
-  }
+  array.forEach(meth => {
+      return sum = meth(sum);
+  });
+  
+  // if array is empty
+  return int;
 }
 
 // function actionApplyer(s, arr) {
