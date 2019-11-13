@@ -32,6 +32,7 @@ const Calculator = {
 };
 
 function actionApplyer(int, array) {
+  
   let sum = int;
   
   if (array.length === 0){
@@ -40,20 +41,17 @@ function actionApplyer(int, array) {
   else {
     
     array.forEach(function(meth) {
-      sum = meth(sum)
+      return sum = meth(sum)
     })
   }
-  
-  return sum;
-  
 }
 
-function actionApplyer(s, arr) {
-	let a = s;
+// function actionApplyer(s, arr) {
+// 	let a = s;
 	
-	arr.forEach(i => {
-		return a = i(a);
-	});
+// 	arr.forEach(i => {
+// 		return a = i(a);
+// 	});
 
-	return a;
-}
+// 	return a;
+// }
