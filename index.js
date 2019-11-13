@@ -32,6 +32,7 @@ const Calculator = {
 };
 
 function actionApplyer(int, array) {
+  
   if (array.length === 0){
     return int;
   }
@@ -45,3 +46,11 @@ function actionApplyer(int, array) {
   return sum;
   
 }
+
+let a = s;
+	
+	arr.forEach(i => {
+		return a = i(a);
+	});
+
+	return a;
