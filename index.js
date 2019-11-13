@@ -32,11 +32,11 @@ const Calculator = {
 };
 
 
-function actionApplyer(s, arr) {
-	let a = s;
+function actionApplyer(int, arr) {
+	let a = int;
 	
-	arr.forEach(i => {
-		return a = i(a);
+	arr.forEach(meth => {
+		return a = meth(a);
 	});
 
 	return a;
