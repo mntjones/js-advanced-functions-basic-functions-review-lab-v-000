@@ -31,24 +31,13 @@ const Calculator = {
   }
 };
 
-function actionApplyer(int, array) {
-  
-  let sum = int;
-  
-  array.forEach(meth => {
-      return sum = meth(sum);
-  });
-  
-  // if array is empty
-  return int;
-}
 
-// function actionApplyer(s, arr) {
-// 	let a = s;
+function actionApplyer(s, arr) {
+	let a = s;
 	
-// 	arr.forEach(i => {
-// 		return a = i(a);
-// 	});
+	arr.forEach(i => {
+		return a = i(a);
+	});
 
-// 	return a;
-// }
+	return a;
+}
