@@ -32,13 +32,13 @@ const Calculator = {
 };
 
 function actionApplyer(int, array) {
-  
+  let sum = int;
   
   if (array.length === 0){
     return int;
   }
   else {
-    let sum = int;
+    
     array.forEach(function(meth) {
       sum = meth(sum)
     })
